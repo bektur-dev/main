@@ -1,43 +1,21 @@
-# Bektur Ukuev Portfolio Site
+# Bektur DevOps Portfolio v2
 
-Static resume-style portfolio website built for Nginx.
+Updated static portfolio website for GitHub Pages or Nginx.
 
 ## Files
+- `index.html`
+- `styles.css`
+- `script.js`
+- `assets/profile.jpg`
 
-- `index.html` — main page
-- `styles.css` — styling and responsive layout
-- `script.js` — reveal animations and stat counters
-- `assets/profile.jpg` — profile image
-- `nginx.conf` — Nginx server config example
+## Deploy on GitHub Pages
+1. Replace the files in your repository with these files.
+2. Commit and push.
+3. In GitHub: `Settings -> Pages -> Deploy from a branch -> main -> /(root)`
+4. Save and wait 30-90 seconds.
 
-## Run locally
+## LinkedIn Featured Title
+`DevOps Portfolio – Kubernetes, AWS, CI/CD`
 
-Simple option:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then open:
-
-```text
-http://localhost:8080
-```
-
-## Run with Nginx
-
-Copy files into your Nginx web root, for example:
-
-```bash
-sudo mkdir -p /usr/share/nginx/html
-sudo cp -R ./* /usr/share/nginx/html/
-sudo cp nginx.conf /etc/nginx/conf.d/default.conf
-sudo nginx -t
-sudo systemctl reload nginx
-```
-
-## Replace content
-
-- Update phone, email, and LinkedIn in `index.html`
-- Replace `assets/profile.jpg` if you want another image
-- Add GitHub or project links in the contact section if needed
+## LinkedIn Featured Description
+`Personal portfolio website showcasing DevOps, platform engineering, Kubernetes, AWS, GitOps, observability, and infrastructure automation experience.`
